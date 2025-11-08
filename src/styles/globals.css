@@ -1,0 +1,368 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  
+  /* Healthcare Color Palette - Vibrant & WCAG AA Compliant */
+  --background: #F8F9FE;
+  --foreground: #0F172A;
+  
+  /* Primary - Vibrant Blue */
+  --primary: #2563EB;
+  --primary-foreground: #FFFFFF;
+  --primary-hover: #1D4ED8;
+  --primary-light: #DBEAFE;
+  
+  /* Accent - Vibrant Teal */
+  --accent: #14B8A6;
+  --accent-foreground: #FFFFFF;
+  --accent-hover: #0D9488;
+  --accent-light: #CCFBF1;
+  
+  /* Secondary - Purple */
+  --secondary-color: #8B5CF6;
+  --secondary-color-foreground: #FFFFFF;
+  --secondary-color-hover: #7C3AED;
+  --secondary-color-light: #EDE9FE;
+  
+  /* Status Colors - Vibrant */
+  --status-success: #10B981;
+  --status-success-foreground: #FFFFFF;
+  --status-success-light: #D1FAE5;
+  
+  --status-warning: #F59E0B;
+  --status-warning-foreground: #1F2937;
+  --status-warning-light: #FEF3C7;
+  
+  --status-error: #EF4444;
+  --status-error-foreground: #FFFFFF;
+  --status-error-light: #FEE2E2;
+  
+  --status-pending: #8B5CF6;
+  --status-pending-foreground: #FFFFFF;
+  --status-pending-light: #EDE9FE;
+  
+  --status-info: #3B82F6;
+  --status-info-foreground: #FFFFFF;
+  --status-info-light: #DBEAFE;
+  
+  /* Neutral Palette */
+  --card: #FFFFFF;
+  --card-foreground: #0F172A;
+  --popover: #FFFFFF;
+  --popover-foreground: #0F172A;
+  
+  --secondary: #F1F5F9;
+  --secondary-foreground: #0F172A;
+  
+  --muted: #F8FAFC;
+  --muted-foreground: #64748B;
+  
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  
+  --border: #E2E8F0;
+  --input: transparent;
+  --input-background: #FFFFFF;
+  --input-border: #CBD5E1;
+  --input-focus-border: #2563EB;
+  --switch-background: #CBD5E1;
+  
+  /* Typography */
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  
+  /* Focus & Ring */
+  --ring: #2563EB;
+  --ring-offset: #FFFFFF;
+  
+  /* Charts - Vibrant Healthcare */
+  --chart-1: #2563EB;
+  --chart-2: #14B8A6;
+  --chart-3: #8B5CF6;
+  --chart-4: #F59E0B;
+  --chart-5: #EF4444;
+  --chart-6: #EC4899;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
+  --gradient-accent: linear-gradient(135deg, #14B8A6 0%, #06B6D4 100%);
+  --gradient-success: linear-gradient(135deg, #10B981 0%, #34D399 100%);
+  --gradient-purple: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%);
+  
+  /* Border Radius */
+  --radius: 0.5rem;
+  
+  /* Sidebar */
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #0F172A;
+  --sidebar-primary: #2563EB;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F1F5F9;
+  --sidebar-accent-foreground: #0F172A;
+  --sidebar-border: #E2E8F0;
+  --sidebar-ring: #2563EB;
+}
+
+.dark {
+  /* Dark Mode - Vibrant */
+  --background: #0F172A;
+  --foreground: #F1F5F9;
+  
+  /* Primary - Vibrant Blue */
+  --primary: #3B82F6;
+  --primary-foreground: #FFFFFF;
+  --primary-hover: #2563EB;
+  --primary-light: #1E3A8A;
+  
+  /* Accent - Vibrant Teal */
+  --accent: #14B8A6;
+  --accent-foreground: #FFFFFF;
+  --accent-hover: #0D9488;
+  --accent-light: #134E4A;
+  
+  /* Secondary - Purple */
+  --secondary-color: #A78BFA;
+  --secondary-color-foreground: #FFFFFF;
+  --secondary-color-hover: #8B5CF6;
+  --secondary-color-light: #4C1D95;
+  
+  /* Status Colors - Dark Mode */
+  --status-success: #34D399;
+  --status-success-foreground: #FFFFFF;
+  --status-success-light: #064E3B;
+  
+  --status-warning: #FBBF24;
+  --status-warning-foreground: #1F2937;
+  --status-warning-light: #78350F;
+  
+  --status-error: #F87171;
+  --status-error-foreground: #FFFFFF;
+  --status-error-light: #7F1D1D;
+  
+  --status-pending: #A78BFA;
+  --status-pending-foreground: #FFFFFF;
+  --status-pending-light: #4C1D95;
+  
+  --status-info: #60A5FA;
+  --status-info-foreground: #FFFFFF;
+  --status-info-light: #1E3A8A;
+  
+  /* Neutral Palette */
+  --card: #1E293B;
+  --card-foreground: #F1F5F9;
+  --popover: #1E293B;
+  --popover-foreground: #F1F5F9;
+  
+  --secondary: #334155;
+  --secondary-foreground: #F1F5F9;
+  
+  --muted: #1E293B;
+  --muted-foreground: #94A3B8;
+  
+  --destructive: #F87171;
+  --destructive-foreground: #FFFFFF;
+  
+  --border: #334155;
+  --input: transparent;
+  --input-background: #1E293B;
+  --input-border: #475569;
+  --input-focus-border: #3B82F6;
+  --switch-background: #475569;
+  
+  /* Focus & Ring */
+  --ring: #3B82F6;
+  --ring-offset: #0F172A;
+  
+  /* Charts - Dark Mode */
+  --chart-1: #3B82F6;
+  --chart-2: #14B8A6;
+  --chart-3: #A78BFA;
+  --chart-4: #FBBF24;
+  --chart-5: #F87171;
+  --chart-6: #F472B6;
+  
+  /* Gradients - Dark Mode */
+  --gradient-primary: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
+  --gradient-accent: linear-gradient(135deg, #14B8A6 0%, #2DD4BF 100%);
+  --gradient-success: linear-gradient(135deg, #34D399 0%, #6EE7B7 100%);
+  --gradient-purple: linear-gradient(135deg, #A78BFA 0%, #C4B5FD 100%);
+  
+  /* Sidebar */
+  --sidebar: #1E293B;
+  --sidebar-foreground: #F1F5F9;
+  --sidebar-primary: #3B82F6;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #334155;
+  --sidebar-accent-foreground: #F1F5F9;
+  --sidebar-border: #334155;
+  --sidebar-ring: #3B82F6;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  
+  /* Primary Colors */
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-light: var(--primary-light);
+  
+  /* Accent Colors */
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-light: var(--accent-light);
+  
+  /* Secondary Colors */
+  --color-secondary-color: var(--secondary-color);
+  --color-secondary-color-foreground: var(--secondary-color-foreground);
+  --color-secondary-color-hover: var(--secondary-color-hover);
+  --color-secondary-color-light: var(--secondary-color-light);
+  
+  /* Status Colors */
+  --color-status-success: var(--status-success);
+  --color-status-success-foreground: var(--status-success-foreground);
+  --color-status-success-light: var(--status-success-light);
+  
+  --color-status-warning: var(--status-warning);
+  --color-status-warning-foreground: var(--status-warning-foreground);
+  --color-status-warning-light: var(--status-warning-light);
+  
+  --color-status-error: var(--status-error);
+  --color-status-error-foreground: var(--status-error-foreground);
+  --color-status-error-light: var(--status-error-light);
+  
+  --color-status-pending: var(--status-pending);
+  --color-status-pending-foreground: var(--status-pending-foreground);
+  --color-status-pending-light: var(--status-pending-light);
+  
+  --color-status-info: var(--status-info);
+  --color-status-info-foreground: var(--status-info-foreground);
+  --color-status-info-light: var(--status-info-light);
+  
+  /* Neutral Colors */
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  
+  /* Borders & Inputs */
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-input-border: var(--input-border);
+  --color-input-focus-border: var(--input-focus-border);
+  --color-switch-background: var(--switch-background);
+  
+  /* Focus & Ring */
+  --color-ring: var(--ring);
+  --color-ring-offset: var(--ring-offset);
+  
+  /* Charts */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-chart-6: var(--chart-6);
+  
+  /* Gradients */
+  --gradient-primary: var(--gradient-primary);
+  --gradient-accent: var(--gradient-accent);
+  --gradient-success: var(--gradient-success);
+  --gradient-purple: var(--gradient-purple);
+  
+  /* Border Radius */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Sidebar */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
